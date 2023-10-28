@@ -1,0 +1,62 @@
+/* Tablets and under */
+@media (max-width: 768px) {
+  /* nav-bar */
+  .nav-bar a:nth-child(4) {
+    margin-left: 1%;
+  }
+
+  .a-navBar {
+    padding: 2% 5%;
+  }
+
+  .name-navBar {
+    display: none;
+  }
+
+  .nav-bar a:nth-child(2) {
+    border-right: none;
+  }
+
+  /* job-info */
+  .job-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+  }
+
+  /* certificate */
+  .certificate-content div {
+    display: block;
+    padding: 20px;
+  }
+
+  .certificate-content div:nth-child(2) {
+    border-left: 1px solid #e0d1ad;
+    margin-left: 0;
+    padding-left: 18px;
+  }
+
+  .certificate-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  /* project */
+  .project-position {
+    gap: 10%;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .first-table-cell-height {
+    height: 212px;
+  }
+
+  .three-table-cell-height {
+    height: 135px;
+  }
+}

@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif, tahoma;
+}
+
+body {
+  color: #182c61;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "item1 item3 item5"
+    "item2 item4 item5";
+  align-content: start;
+  justify-content: center;
+  background-color: #0000ff;
+  margin: 10px;
+  text-align: justify;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container h2 {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #ddd;
+  color: #0000ff;
+}
+
+.content-align {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 15px;
+}
+
+.content-align i {
+  margin: 15px 15px 0 0;
+}
+
+/* Goals */
+.goals {
+  grid-area: item1;
+  background-color: #f0f8ff;
+  margin: 15px 10px 10px 10px;
+  padding: 15px;
+}
+
+.border-goals {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Scopes */
+.scopes {
+  grid-area: item2;
+  background-color: #f0f8ff;
+  margin: 0 10px 15px 10px;
+  padding: 15px;
+}
+
+.content-align-scopes {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding: 5px;
+}
+
+.content-align-scopes p {
+  padding: 10px;
+}
+
+/* Team */
+.team {
+  grid-area: item3;
+  background-color: #f0f8ff;
+  margin: 15px 10px 10px 0;
+  padding: 15px;
+}
+
+/* Primary */
+.primary {
+  grid-area: item4;
+  background-color: #f0f8ff;
+  margin: 0 10px 15px 0;
+  padding: 15px;
+}
+
+/* Timeline */
+.timeline {
+  grid-area: item5;
+  background-color: #f0f8ff;
+  margin: 15px 10px 15px 0;
+  padding: 15px;
+}
+
+.timeline img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.border-timeline {
+  border-bottom: 1px dashed #a9dde4;
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5";
+  }
+
+  .content-align {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .icon {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  /* Scopes */
+  .scopes {
+    margin-bottom: 10px;
+  }
+
+  .content-align-scopes {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* Team */
+  .team {
+    margin: 0 10px 10px 10px;
+  }
+
+  /* Primary */
+  .primary {
+    margin: 0 10px 10px 10px;
+  }
+
+  /* Timeline */
+  .timeline {
+    margin: 0 10px 15px 10px;
+  }
+}
